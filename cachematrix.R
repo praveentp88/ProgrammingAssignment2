@@ -1,18 +1,20 @@
 ## Put comments here that give an overall description of what your
 ## functions do
+## Put comments here that give an overall description of what your
+## functions do
 
 ## Write a short comment describing this function
 makeCacheMatrix <- function(x = matrix()) {
       #setting Null for INVERTED Matrix
-      inv <- NULL
+      inverse <- NULL
       #defining functions to Set, Get ,setinverse, GetInverse
       setMatrix <- function(y) {
             x <<- y
-            inv <<- NULL
+            inverse <<- NULL
       }
       getMatrix <- function() x
-      setinvMatrix <- function(inverse) inv <<- inverse
-      getinvMatrix <- function() inv
+      setinvMatrix <- function(inverseD) inverse <<- inverseD
+      getinvMatrix <- function() inverse
       #List of Functions
       list(setMatrix = setMatrix, getMatrix = getMatrix, setinvMatrix = setinvMatrix, getinvMatrix = getinvMatrix)
 }	 
